@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://spx12vccj61x"]
+
+[node name="RigidBody2D" type="RigidBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]

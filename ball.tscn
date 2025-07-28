@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://dduvdb6885x1v"]
+
+[ext_resource type="Script" uid="uid://byemcr5y3r11i" path="res://scenes/ball.gd" id="1_41u45"]
+[ext_resource type="Texture2D" uid="uid://ik601cmbulq4" path="res://scenes/assests/a-vibrant-beach-ball-on-a-white-background-perfect-for-summer-promotional-materials-and-fun-designs-png.webp" id="1_x8fbi"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_41u45"]
+radius = 77.0065
+
+[node name="Ball" type="CharacterBody2D"]
+script = ExtResource("1_41u45")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -1)
+texture = ExtResource("1_x8fbi")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D"]
+position = Vector2(45, 10)
+shape = SubResource("CircleShape2D_41u45")
